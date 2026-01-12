@@ -68,16 +68,16 @@ h1 {
 }
 
 /* Heart positions */
-.heart:nth-child(2) { left: 23%; top: 60%; }
-.heart:nth-child(3) { left: 45%; top: 48%; }
-.heart:nth-child(4) { left: 38%; top: 70%; }
-.heart:nth-child(5) { left: 8%;  top: 72%; }
-.heart:nth-child(6) { left: 3%;  top: 55%; }
-.heart:nth-child(7) { left: 20%; top: 47%; }
-.heart:nth-child(8) { left: 66%; top: 65%; }
-.heart:nth-child(9) { left: 67%; top: 47%; }
-.heart:nth-child(10){ left: 52%; top: 60%; }
-.heart:nth-child(11){ left: 2%;  top: 43%; }
+.heart:nth-child(2) { left: 28%; top: 60%; }
+.heart:nth-child(3) { left: 50%; top: 48%; }
+.heart:nth-child(4) { left: 43%; top: 70%; }
+.heart:nth-child(5) { left: 13%;  top: 72%; }
+.heart:nth-child(6) { left: 8%;  top: 55%; }
+.heart:nth-child(7) { left: 25%; top: 47%; }
+.heart:nth-child(8) { left: 71%; top: 65%; }
+.heart:nth-child(9) { left: 72%; top: 47%; }
+.heart:nth-child(10){ left: 53%; top: 58%; }
+.heart:nth-child(11){ left: 7%;  top: 43%; }
 
 /* Animations */
 @keyframes float {
@@ -121,6 +121,7 @@ h1 {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
 
 
 
