@@ -39,7 +39,7 @@ h1 {
 }
 
 .heart img {
-  width: clamp(20px, 12vw, 50px);
+  width: clamp(20px, 6vw, 50px);
   height: auto;
   display: block;
 }
@@ -120,5 +120,6 @@ h1 {
   transform: translate(-50%, -50%);
   z-index: 10;
 }
+
 
 
