@@ -1,0 +1,132 @@
+body {
+  text-align: center;
+  background: #fff6f9;
+  font-family: sans-serif;
+}
+
+h1 {
+  margin-top: 20px;
+  color: #c2185b;
+}
+
+.jar-container {
+  position: relative;
+  width: 300px;
+  margin: 40px auto;
+  z-index: 1;
+  
+}
+
+.jar {
+  width: 100%;
+  z-index: 1;
+  position: relative;
+  pointer-events: none;
+}
+
+.heart {
+  position: absolute;
+  font-size: 45px;
+  cursor: pointer;
+  animation: float 4s infinite ease-in-out;
+  z-index: 5;
+}
+
+.heart img {
+  width: 80px;     /* adjust size here */
+  height: auto;
+  display: block;
+}
+
+
+
+.heart::after {
+  content: attr(data-text); 
+  position: absolute;
+  bottom: 120%; 
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0,0,0,0.7);
+  color: #fff;
+  padding: 3px 8px;
+  border-radius: 5px;
+  font-size: 14px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s;
+}
+
+
+.heart:hover::after {
+  opacity: 1;
+}
+
+
+.heart:nth-child(2) { left: 21%; top: 60%; }
+.heart:nth-child(3) { left: 43%; top: 48%; }
+.heart:nth-child(4) { left: 36%; top: 70%; }
+.heart:nth-child(5) { left: 6%; top: 72%; }
+.heart:nth-child(6) { left: 1%; top: 55%; }
+.heart:nth-child(7) { left: 18%; top: 47%; }
+.heart:nth-child(8) { left: 66%; top: 65%; }
+.heart:nth-child(9) { left: 65%; top: 47%; }
+.heart:nth-child(10) { left: 50%; top: 60%; }
+.heart:nth-child(11) { left: 1%; top: 43%; }
+
+
+@keyframes float {
+  0% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+  100% { transform: translateY(0); }
+}
+@keyframes pop {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  70% {
+    transform: scale(1.4);
+    opacity: 0.8;
+  }
+  100% {
+    transform: scale(0);
+    opacity: 0;
+  }
+}
+
+.heart.pop {
+  animation: pop 0.6s ease-out forwards;
+}
+
+.heart.popped img {
+  display: none;
+}
+
+.final-message {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 5;
+  font-size: 14px;
+  width: 80%;
+  padding: 20px;
+
+  
+
+  text-align: center;
+  font-family: 'Allura', serif;
+  color: #b11212;
+
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+#media-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  
+}
