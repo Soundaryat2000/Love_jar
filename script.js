@@ -79,7 +79,7 @@ if (clickedCount === totalHearts) {
       video.width = 800px;
       video.style.zIndex = '10';
       video.style.pointerEvents = 'auto';
-      video.style.width = '100%';
+      video.style.width = '85%';
       
       
       video.setAttribute('playsinline','');
@@ -191,6 +191,7 @@ typeText(title, 'For You, My Love ❤️', 80, () => {
     }
   }, speed);
 }
+
 
 
 
