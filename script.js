@@ -65,7 +65,7 @@ if (clickedCount === totalHearts) {
     wrapper.style.position = 'relative';
 
     // Add media
-    if (extension === 'mp3') {
+    if (extension === 'm4a') {
       const audio = document.createElement('audio');
       audio.src = mediaFile;
       audio.controls = true;
@@ -191,6 +191,7 @@ typeText(title, 'For You, My Love ❤️', 80, () => {
     }
   }, speed);
 }
+
 
 
 
