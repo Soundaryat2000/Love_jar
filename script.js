@@ -74,12 +74,14 @@ if (clickedCount === totalHearts) {
       video.src = mediaFile;
       video.controls = true;
       video.autoplay = true;
-      video.width = 300;
+      video.width = 800;
+      video.setAttribute('playsinline','');
+      video.setAttribute('webkit-playsinline', '');
       wrapper.appendChild(video);
     } else if (extension === 'png' || extension === 'jpg') {
       const img = document.createElement('img');
       img.src = mediaFile;
-      img.style.width = '300px';
+      img.style.width = '800px';
       wrapper.appendChild(img);
     }
 
@@ -179,4 +181,5 @@ typeText(title, 'For You, My Love ❤️', 80, () => {
     }
   }, speed);
 }
+
 
