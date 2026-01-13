@@ -25,7 +25,7 @@ hearts.forEach(heart => {
     } else if (extension === 'png' || extension === 'jpg') {
       const img = document.createElement('img');
       img.src = mediaFile;
-      img.style.width = '300px';
+      
       mediaContainer.appendChild(img);
     }
   });
@@ -179,3 +179,4 @@ typeText(title, 'For You, My Love ❤️', 80, () => {
     }
   }, speed);
 }
+
