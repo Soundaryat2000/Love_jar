@@ -10,8 +10,10 @@ body {
 }
 
 h1 {
-  margin: 12px 0;
+  margin: 20px 0;
   text-align: center;
+  font-size: 40px;
+  color: #c2185b;
   flex-shrink: 0;
 }
 
@@ -131,6 +133,7 @@ h1 {
   max-width: 100%;
   height: auto;
     }
+
 
 
 
