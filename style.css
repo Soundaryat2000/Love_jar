@@ -18,9 +18,9 @@ h1 {
 /* Jar container */
 .jar-container {
   position: relative;
-  width: 85vw;
+  width: 100vw;
   max-width: 800px;
-  height: 75vh;
+  height: 90vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -131,6 +131,7 @@ h1 {
   max-width: 100%;
   height: auto;
     }
+
 
 
 
