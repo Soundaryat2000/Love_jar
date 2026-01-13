@@ -76,10 +76,10 @@ if (clickedCount === totalHearts) {
       video.src = mediaFile;
       video.controls = true;
       video.autoplay = true;
-      video.width = 800;
+      video.width = 800px;
       video.style.zIndex = '10';
       video.style.pointerEvents = 'auto';
-      video.style.width = '85%';
+      video.style.width = '100%';
       
       
       video.setAttribute('playsinline','');
@@ -88,7 +88,7 @@ if (clickedCount === totalHearts) {
     } else if (extension === 'png' || extension === 'jpg') {
       const img = document.createElement('img');
       img.src = mediaFile;
-      img.style.width = '500px';
+      img.style.width = '800px';
       wrapper.appendChild(img);
     }
 
@@ -191,6 +191,7 @@ typeText(title, 'For You, My Love ❤️', 80, () => {
     }
   }, speed);
 }
+
 
 
 
