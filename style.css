@@ -46,7 +46,7 @@ h1 {
 }
 
 .heart img {
-  width: clamp(35px, 6vw, 45px);
+  width: clamp(28px, 10vw, 45px);
   height: auto;
   display: block;
 }
@@ -133,6 +133,7 @@ h1 {
   max-width: 100%;
   height: auto;
     }
+
 
 
 
